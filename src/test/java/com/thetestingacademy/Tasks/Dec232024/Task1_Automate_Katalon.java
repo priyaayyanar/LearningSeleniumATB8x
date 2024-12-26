@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Task1_AutomateKatalon {
+public class Task1_Automate_Katalon {
     @Test
     public void testAppointment() throws InterruptedException {
 
