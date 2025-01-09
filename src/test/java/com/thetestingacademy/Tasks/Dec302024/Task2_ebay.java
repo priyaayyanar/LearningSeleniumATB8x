@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Task2 {
+public class Task2_ebay {
     @Test
     public void testMethod() throws InterruptedException {
         EdgeOptions edgeOptions = new EdgeOptions();

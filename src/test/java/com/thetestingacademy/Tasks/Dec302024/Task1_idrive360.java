@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class Task1 {
+public class Task1_idrive360 {
     @Test
     public void testMethod() throws InterruptedException {
         EdgeOptions options = new EdgeOptions();
