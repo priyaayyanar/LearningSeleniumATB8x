@@ -21,7 +21,7 @@ public class Task2_ebay {
         WebElement input_searchBox = edgeDriver.findElement(By.xpath("//input[@id='gh-ac']"));
         input_searchBox.sendKeys("macmini");
 
-        WebElement input_searchButton = edgeDriver.findElement(By.xpath("//input[@value='Search']"));
+        WebElement input_searchButton = edgeDriver.findElement(By.xpath("//span[contains(text(),'Search')]"));
         input_searchButton.click();
 
         List<WebElement> searchTitle = edgeDriver.findElements(By.xpath("//div[@class='s-item__title']"));
