@@ -1,5 +1,6 @@
 package com.thetestingacademy.ex06_SeleniumWaits;
 
+import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 public class Selenium32_MakeMyTrip {
+    @Description("Verify MakeMyTrip")
     @Test
     public void test_MakeMyTrip(){
         EdgeOptions edgeOptions = new EdgeOptions();
@@ -18,11 +20,11 @@ public class Selenium32_MakeMyTrip {
         edgeOptions.addArguments("--start-maximized");
 
         EdgeDriver edgeDriver = new EdgeDriver(edgeOptions);
-        edgeDriver.get("https://www.makemytrip.com/");
+        edgeDriver.navigate().to("https://www.makemytrip.com/");
         System.out.println(edgeDriver.getTitle());
 
-        WebDriverWait wait1 = new WebDriverWait(edgeDriver, Duration.ofSeconds(1)); // 3000 MilliSeconds/ 1000 = 3 Sec
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@data-cy='closeModal']")));
+        WebDriverWait wait = new WebDriverWait(edgeDriver, Duration.ofSeconds(1)); // 3000 MilliSeconds/ 1000 = 3 Sec
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@data-cy='closeModal']")));
 
         WebElement close_PopUp = edgeDriver.findElement(By.xpath("//span[@data-cy='closeModal']"));
         close_PopUp.click();
