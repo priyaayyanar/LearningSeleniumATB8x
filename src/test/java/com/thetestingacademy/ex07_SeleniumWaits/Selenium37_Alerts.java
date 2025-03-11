@@ -1,8 +1,7 @@
-package com.thetestingacademy.ex06_SeleniumWaits;
+package com.thetestingacademy.ex07_SeleniumWaits;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,7 +10,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class Selenium_Alerts {
+public class Selenium37_Alerts {
 
     public static void main(String[] args) throws InterruptedException {
 

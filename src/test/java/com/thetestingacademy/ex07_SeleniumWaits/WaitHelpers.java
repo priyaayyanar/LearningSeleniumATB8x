@@ -1,4 +1,4 @@
-package com.thetestingacademy.ex06_SeleniumWaits;
+package com.thetestingacademy.ex07_SeleniumWaits;
 
 import com.google.common.base.Function;
 import org.openqa.selenium.By;

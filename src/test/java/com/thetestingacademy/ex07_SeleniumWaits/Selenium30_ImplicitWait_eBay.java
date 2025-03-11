@@ -1,4 +1,4 @@
-package com.thetestingacademy.ex06_SeleniumWaits;
+package com.thetestingacademy.ex07_SeleniumWaits;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.PageLoadStrategy;

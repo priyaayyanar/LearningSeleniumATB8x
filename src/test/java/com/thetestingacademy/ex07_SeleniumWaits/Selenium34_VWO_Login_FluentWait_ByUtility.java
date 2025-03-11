@@ -1,19 +1,13 @@
-package com.thetestingacademy.ex06_SeleniumWaits;
+package com.thetestingacademy.ex07_SeleniumWaits;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
-import java.util.NoSuchElementException;
-import java.util.function.Function;
-
-import static com.thetestingacademy.ex06_SeleniumWaits.WaitHelpers.checkVisibilityByFluentWait;
+import static com.thetestingacademy.ex07_SeleniumWaits.WaitHelpers.checkVisibilityByFluentWait;
 
 public class Selenium34_VWO_Login_FluentWait_ByUtility {
     @Test
