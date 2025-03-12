@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Selenium38_SVG_P1 {
+public class Selenium38_SVG_P1_flipkart {
 
     FirefoxDriver driver;
 
