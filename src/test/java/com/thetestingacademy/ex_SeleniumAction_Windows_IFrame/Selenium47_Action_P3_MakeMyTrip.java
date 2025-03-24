@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.List;
 
 public class Selenium47_Action_P3_MakeMyTrip {
 
@@ -48,7 +49,20 @@ public class Selenium47_Action_P3_MakeMyTrip {
         actions.moveToElement(fromCity).contextClick();  //RightClick
 
         Thread.sleep(3000);
-        //actions.moveToElement(fromCity).keyDown(Keys.ARROW_DOWN).keyDown(Keys.ENTER).perform();
+
+        List<WebElement> list_of_cities = driver.findElements(By.xpath("//ul[@class='react-autosuggest__suggestions-list']/li"));
+
+        for (WebElement e : list_of_cities){
+            if(e.getText().contains("Chennai")){
+                e.click();
+                break;
+            }
+        }
+
+        Thread.sleep(5000);
+
+        actions.moveToElement(fromCity).keyDown(Keys.ARROW_DOWN).keyDown(Keys.ENTER).perform();
+
     }
     @AfterTest
     public void closeBrowser(){
