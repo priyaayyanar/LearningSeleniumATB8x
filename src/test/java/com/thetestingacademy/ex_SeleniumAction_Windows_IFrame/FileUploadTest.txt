@@ -1,0 +1,5 @@
+Hi,
+
+This file is for testing the file upload option in Selenium.
+
+Thanks.
