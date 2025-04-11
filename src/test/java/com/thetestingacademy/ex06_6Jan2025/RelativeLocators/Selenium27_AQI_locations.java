@@ -34,7 +34,7 @@ public class Selenium27_AQI_locations {
 
             String s4 = driver.findElement(with(By.tagName("p")).below(e)).getText();
 
-            System.out.println("Rank : "+s1+" | Location : "+e.getText()+"| AQI Pollution : "+s2);
+            System.out.println("Rank : "+s1+" | Location : "+e.getText()+"| AQI Pollution : "+s2+ " | "+s3+ " | "+s4);
         }
         Thread.sleep(3000);
         driver.quit();

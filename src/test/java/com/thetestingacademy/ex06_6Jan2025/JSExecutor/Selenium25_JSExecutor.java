@@ -18,9 +18,12 @@ public class Selenium25_JSExecutor {
         JavascriptExecutor jse = (JavascriptExecutor)driver;
 
         WebElement div_to_scroll = driver.findElement(By.xpath("//div[@id='userName']"));
-        jse.executeScript("arguments[0].scrollIntoView(true);",div_to_scroll);
+        //jse.executeScript("arguments[0].scrollIntoView(true);",div_to_scroll);
 
         //WebElement userName = driver.findElement(By.xpath(""));
+
+        String html = jse.executeScript("return arguments[0].style.display",div_to_scroll).toString();
+        System.out.println(html);
 
         Thread.sleep(3000);
         driver.quit();
